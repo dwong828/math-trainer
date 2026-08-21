@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { 
-  Trophy, Star, Compass, Upload, Clock, Target, FastForward, ChevronLeft, ChevronRight, Heart, CheckCircle2, XCircle, HelpCircle
+  Trophy, Star, Compass, Upload, Clock, Target, FastForward, ChevronLeft, ChevronRight, Heart, CheckCircle2, XCircle, HelpCircle, FileText, Eye
 } from 'lucide-react';
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
@@ -11,7 +11,8 @@ const defaultQuestions = [
     "question": "If you have \\$10.00 and spend \\$4.50, how much is left?",
     "answer": "5.50",
     "type": "input",
-    "difficulty": 1
+    "difficulty": 1,
+    "solutionFile": "q1_solution.txt"
   },
   {
     "id": 2,
@@ -24,12 +25,26 @@ const defaultQuestions = [
       "B": "$600 \\div 3/5 $",
       "C": "$2400 \\div 8$",
       "D": "$\\frac{3}{4}$ of 480"
-    }
+    },
+    "solutionFile": "q2_solution.txt"
   }
 ];
 
+// Helper function to format filenames to Capitalized Words
+const formatTitle = (filename) => {
+  if (!filename) return "Math Trainer";
+  const nameWithoutExt = filename.substring(0, filename.lastIndexOf('.')) || filename;
+  return nameWithoutExt
+    .replace(/[-_]/g, ' ')
+    .split(' ')
+    .filter(Boolean)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+};
+
 export default function MathTrainer() {
   const [questions, setQuestions] = useState(defaultQuestions);
+  const [fileName, setFileName] = useState('2021-stretch-work.json');
   const [index, setIndex] = useState(0);
   const [userInput, setUserInput] = useState('');
   const [selectedMcq, setSelectedMcq] = useState([]); 
@@ -40,6 +55,10 @@ export default function MathTrainer() {
   const [isFinished, setIsFinished] = useState(false);
   const [isReviewMode, setIsReviewMode] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [showSolution, setShowSolution] = useState(false);
+  const [solutionText, setSolutionText] = useState('');
+  const [isSolutionLoading, setIsSolutionLoading] = useState(false);
+  const [solutionCache, setSolutionCache] = useState({});
   const [starPos, setStarPos] = useState(null);
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(true);
@@ -95,6 +114,38 @@ export default function MathTrainer() {
     return () => clearInterval(interval);
   }, [isActive, isFinished]);
 
+  // Solution fetching logic when showSolution is toggled
+  useEffect(() => {
+    if (!showSolution || !currentQuestion?.solutionFile) {
+      if (!showSolution) setSolutionText('');
+      return;
+    }
+
+    const name = currentQuestion.solutionFile;
+
+    if (solutionCache[name]) {
+      setSolutionText(solutionCache[name]);
+      return;
+    }
+
+    setIsSolutionLoading(true);
+    fetch(`/solutions/${name}`)
+      .then((res) => {
+        if (!res.ok) throw new Error('Solution file not found');
+        return res.text();
+      })
+      .then((text) => {
+        setSolutionCache((prev) => ({ ...prev, [name]: text }));
+        setSolutionText(text);
+        setIsSolutionLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setSolutionText('Unable to load solution file.');
+        setIsSolutionLoading(false);
+      });
+  }, [showSolution, currentQuestion?.solutionFile, solutionCache]);
+
   const formatTime = (totalSeconds) => {
     const mins = Math.floor(totalSeconds / 60);
     const secs = totalSeconds % 60;
@@ -117,6 +168,8 @@ export default function MathTrainer() {
   const jumpToQuestion = (targetIndex) => {
     setIndex(targetIndex);
     setShowAnswer(false);
+    setShowSolution(false);
+    setSolutionText('');
     if (!isReviewMode) {
       prepareNextQuestion();
     }
@@ -140,6 +193,8 @@ export default function MathTrainer() {
 
   const prepareNextQuestion = () => {
     setShowAnswer(false);
+    setShowSolution(false);
+    setSolutionText('');
     setUserInput('');
     setSelectedMcq([]);
     setLives(3);
@@ -226,6 +281,7 @@ export default function MathTrainer() {
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
     if (!file) return;
+    setFileName(file.name);
     const reader = new FileReader();
     reader.onload = (ev) => {
       try {
@@ -233,6 +289,7 @@ export default function MathTrainer() {
         setQuestions(data);
         setIndex(0); setHistory([]); setXp(0); setSeconds(0); 
         setIsActive(true); setIsFinished(false); setIsReviewMode(false);
+        setSolutionCache({});
         prepareNextQuestion();
       } catch (err) { alert("Invalid JSON file."); }
     };
@@ -266,7 +323,8 @@ export default function MathTrainer() {
           {headerUI}
           <div className="text-center mb-8">
             <Trophy className="mx-auto text-yellow-500 mb-2" size={50} />
-            <h2 className="text-4xl font-black text-[#2d5a61] mb-4">Level Complete!</h2>
+            <h2 className="text-4xl font-black text-[#2d5a61] mb-1">Level Complete!</h2>
+            <p className="text-gray-400 font-bold mb-4">{formatTitle(fileName)}</p>
             <div className="bg-gray-50 rounded-3xl p-6 border border-gray-100 flex flex-col items-center gap-3">
                <div className="flex items-center gap-2 text-gray-400 uppercase font-black text-xs tracking-widest"><Target size={16} /> Accuracy</div>
                <div className="text-5xl font-black text-[#2d5a61]">{accuracyPercent.toFixed(1)}%</div>
@@ -344,6 +402,8 @@ export default function MathTrainer() {
                 setIsFinished(false); 
                 setIndex(0);
                 setShowAnswer(false);
+                setShowSolution(false);
+                setSolutionText('');
               }} 
               className="flex-1 bg-[#6165ed] text-white py-4 rounded-2xl font-black shadow-[0_5px_0_rgb(79,83,209)] cursor-pointer"
             >
@@ -378,12 +438,18 @@ export default function MathTrainer() {
       
       <div className="max-w-6xl mx-auto">
         {headerUI}
-        <nav className="flex justify-between items-center mb-8">
+        <nav className="flex justify-between items-center mb-8 gap-4">
            <div className="flex items-center gap-3">
-              <div className="bg-white p-2 rounded-xl"><Compass className="text-[#2d5a61]" size={28} /></div>
-              <h1 className="text-2xl font-black tracking-tighter">MATH TRAINER</h1>
+              <div className="bg-white p-2 rounded-xl shrink-0"><Compass className="text-[#2d5a61]" size={28} /></div>
+              <h1 className="text-2xl font-black tracking-tighter shrink-0">MATH TRAINER</h1>
            </div>
-           <div ref={xpBarRef} className="bg-[#1e3a3f]/80 rounded-full px-5 py-2 flex items-center gap-4 border border-white/10">
+
+           {/* Page Title from Formatted Filename */}
+           <div className="text-center font-black text-2xl tracking-wide text-white drop-shadow-sm truncate px-4">
+              {formatTitle(fileName)}
+           </div>
+
+           <div ref={xpBarRef} className="bg-[#1e3a3f]/80 rounded-full px-5 py-2 flex items-center gap-4 border border-white/10 shrink-0">
               <span className="font-mono text-sm">{xp} XP</span>
               <div className="w-32 h-2 bg-black/30 rounded-full overflow-hidden">
                 <div className="bg-yellow-400 h-full transition-all duration-500" style={{ width: `${(xp / Math.max(maxPotentialXP, 1)) * 100}%` }}></div>
@@ -392,15 +458,15 @@ export default function MathTrainer() {
         </nav>
 
         {/* Main Content Layout with Sidebar */}
-        <div className="flex flex-col md:flex-row gap-6 items-start">
+        <div className="flex flex-col md:flex-row gap-6 items-stretch">
           
           {/* Sidebar Panel */}
-          <aside className="w-full md:w-64 bg-black/20 backdrop-blur-md rounded-[30px] p-5 border border-white/10 shrink-0 flex flex-col justify-between">
-            <div>
-              <h3 className="text-xs font-black uppercase tracking-widest text-white/70 mb-4 px-2">
+          <aside className="w-full md:w-64 bg-black/20 backdrop-blur-md rounded-[30px] p-5 border border-white/10 shrink-0 flex flex-col justify-between md:sticky md:top-6 md:max-h-[calc(100vh-120px)]">
+            <div className="flex flex-col min-h-0 h-full">
+              <h3 className="text-xs font-black uppercase tracking-widest text-white/70 mb-4 px-2 shrink-0">
                 Questions ({questions.length})
               </h3>
-              <div className="flex flex-col gap-3 max-h-[460px] overflow-y-auto no-scrollbar p-1.5">
+              <div className="flex flex-col gap-3 overflow-y-auto no-scrollbar p-1.5 flex-1 min-h-0">
                 {questions.map((q, qIdx) => {
                   const qHistory = history.find(h => h.id === q.id);
                   const isCurrent = qIdx === index;
@@ -415,18 +481,20 @@ export default function MathTrainer() {
                       if (qHistory.attempts === 1) {
                         bgClass = isCurrent ? "bg-green-500" : "bg-green-600/80 hover:bg-green-600";
                       } else {
-                        bgClass = isCurrent ? "bg-yellow-500" : "bg-yellow-600/80 hover:bg-yellow-600";
+                        // Lighter shade of yellow for multi-attempt correct answers
+                        bgClass = isCurrent ? "bg-yellow-400" : "bg-yellow-500/80 hover:bg-yellow-500";
                       }
                       statusBadge = <CheckCircle2 size={16} className="text-white shrink-0" />;
                       attemptStars = qHistory.attempts;
                     } else if (qHistory.status === "Failed") {
                       bgClass = isCurrent ? "bg-red-500" : "bg-red-600/80 hover:bg-red-600";
                       statusBadge = <XCircle size={16} className="text-white shrink-0" />;
-                      attemptStars = qHistory.attempts;
+                      attemptStars = 0; // Hide stars on failure
                     } else if (qHistory.status === "Skipped") {
-                      bgClass = isCurrent ? "bg-yellow-500" : "bg-yellow-600/80 hover:bg-yellow-600";
+                      // Lighter shade of yellow for skipped items
+                      bgClass = isCurrent ? "bg-yellow-400" : "bg-yellow-500/80 hover:bg-yellow-500";
                       statusBadge = <HelpCircle size={16} className="text-white shrink-0" />;
-                      attemptStars = 0;
+                      attemptStars = 0; // Hide stars on skip
                     }
                   }
 
@@ -434,18 +502,18 @@ export default function MathTrainer() {
                     <button
                       key={q.id}
                       onClick={() => jumpToQuestion(qIdx)}
-                      className={`relative flex items-center justify-between w-full px-4 py-3 rounded-2xl font-black text-base transition-all duration-200 border cursor-pointer ${bgClass} ${borderClass}`}
+                      className={`relative flex items-center justify-between w-full px-4 py-3 rounded-2xl font-black text-base transition-all duration-200 border cursor-pointer shrink-0 ${bgClass} ${borderClass}`}
                     >
                       <div className="flex items-center gap-2">
                         <span className="font-mono text-sm opacity-90">
-                          Q{q.id} ({q.difficulty ?? 1})
+                          {q.id} ({q.difficulty ?? 1})
                         </span>
                         {statusBadge}
                       </div>
 
                       <div className="flex gap-0.5 items-center">
-                        {attemptStars > 0 && Array.from({ length: attemptStars }).map((_, sIdx) => (
-                          <Star key={sIdx} size={12} className="text-yellow-400 fill-yellow-400" />
+                        {qHistory?.solved && attemptStars > 0 && Array.from({ length: attemptStars }).map((_, sIdx) => (
+                          <Star key={sIdx} size={12} className="text-yellow-300 fill-yellow-300" />
                         ))}
                       </div>
                     </button>
@@ -458,7 +526,7 @@ export default function MathTrainer() {
             {isReviewMode && (
               <button 
                 onClick={() => setIsFinished(true)} 
-                className="mt-4 w-full bg-[#6165ed] text-white py-3 px-4 rounded-2xl font-black shadow-[0_4px_0_rgb(79,83,209)] active:translate-y-0.5 hover:bg-[#5256e0] transition-all cursor-pointer text-sm"
+                className="mt-4 w-full bg-[#6165ed] text-white py-3 px-4 rounded-2xl font-black shadow-[0_4px_0_rgb(79,83,209)] active:translate-y-0.5 hover:bg-[#5256e0] transition-all cursor-pointer text-sm shrink-0"
               >
                 Back to Summary
               </button>
@@ -557,10 +625,27 @@ export default function MathTrainer() {
                   </div>
                 )}
 
-                {isReviewMode && !isQuestionCorrect && showAnswer && (
+                {/* Revealed Answer Box */}
+                {isReviewMode && showAnswer && (
                   <div className="mt-6 bg-green-50 border-2 border-green-200 p-6 rounded-2xl animate-in fade-in slide-in-from-top-4">
                     <p className="text-xs font-black text-green-600 uppercase mb-1">Answer:</p>
                     <p className="text-3xl font-black text-green-700">{currentQuestion.answer}</p>
+                  </div>
+                )}
+
+                {/* Revealed Solution Text Box */}
+                {isReviewMode && showSolution && (
+                  <div className="mt-6 bg-blue-50 border-2 border-blue-200 p-6 rounded-2xl animate-in fade-in slide-in-from-top-4">
+                    <p className="text-xs font-black text-blue-600 uppercase mb-2 flex items-center gap-2">
+                      <FileText size={16} /> Solution Explanation:
+                    </p>
+                    {isSolutionLoading ? (
+                      <p className="text-blue-500 font-bold animate-pulse">Loading solution file...</p>
+                    ) : (
+                      <div className="text-gray-800 text-lg leading-relaxed whitespace-pre-line font-medium">
+                        {renderContent(solutionText)}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -574,14 +659,21 @@ export default function MathTrainer() {
                     </button>
                   </div>
                 ) : (
-                  <div className="flex w-full justify-between items-center">
-                    {!isQuestionCorrect && (
+                  <div className="flex w-full justify-start items-center gap-4 flex-wrap">
+                    <button 
+                      ref={revealButtonRef}
+                      onClick={() => setShowAnswer(!showAnswer)} 
+                      className="bg-gray-800 text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 focus:outline-none transition-all cursor-pointer flex items-center gap-2"
+                    >
+                      <Eye size={18} /> {showAnswer ? "Hide Answer" : "Reveal Answer"}
+                    </button>
+
+                    {currentQuestion.solutionFile && (
                       <button 
-                        ref={revealButtonRef}
-                        onClick={() => setShowAnswer(!showAnswer)} 
-                        className="bg-gray-800 text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 focus:outline-none transition-all cursor-pointer"
+                        onClick={() => setShowSolution(!showSolution)} 
+                        className="bg-[#6165ed] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#5256e0] focus:ring-4 focus:ring-blue-300 focus:outline-none transition-all cursor-pointer flex items-center gap-2 shadow-sm"
                       >
-                        {showAnswer ? "Hide Answer" : "Reveal Answer"}
+                        <FileText size={18} /> {showSolution ? "Hide Solution" : "Reveal Solution"}
                       </button>
                     )}
                   </div>

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "Mean 10",
+    "question": "After taking 3 of the 4 exams in history class, Callie has an average score of 66 points.  If the fourth exam counts twice as much as the other exams, what is the feweset points Callie can score on the fourth exam and get an overall exam average of at least 70 points?",
+    "answer": "76",
+    "difficulty": "2",
+    "categories": {
+      "algebra": true,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Circle 14",
+    "question": "The circumference of a circle with radius R is equal to the perimeter of a square with side length S.  What is the ratio of R to S?  Express your answer as a decimal to the nearest tenth.",
+    "answer": "0.6",
+    "difficulty": "2",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": true,
+      "probability": false
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Circle 15",
+    "question": "Semicircle P has a radius of 5cm.  Circle Q is the largest possible circle that can be inscribed in semicircle P.  What is the area of the interior of P that is not in the interior of Q?  Express your answer as a common fraction in terms of pi. (e.g. if your answer is 3/4 * pi, then put 3/4)",
+    "answer": "25/4",
+    "difficulty": "2",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": true,
+      "probability": false
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Circle 17",
+    "question": "Circle D intersects the center of Circle E, and cirle E intersects the center of circle D.  The radius of each circle is 6. The area of where the circles overlap can be expressed as: $a\\pi + b\\sqrt{c}$.  What is the value of a + b + c?",
+    "answer": "9",
+    "difficulty": "5",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": true,
+      "probability": false
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Circle 18",
+    "question": "A circle (A) is inscribed in a square (B) that is inscribed in a circle (C).  If C has  an area of $256\\pi$, what is the radius of the smaller circle (A)?",
+    "answer": "B",
+    "type": "mcq",
+    "options": {
+      "A": "$10\\sqrt{2}$",
+      "B": "$8\\sqrt{2}$",
+      "C": "$6\\sqrt{2}$",
+      "D": "$3\\sqrt{2}$"
+    },
+    "difficulty": "3",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": true,
+      "probability": false
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Circle 20",
+    "question": "A circle of radius 17 has its center in the second quadrant.  The circle intersects the y-axis at (0,0) and (0, $17\\sqrt{2}$).  What is the area of the region of the circle in the third quadrant?  Express your answer as a decimal to the nearest tenth.",
+    "answer": "82.5",
+    "difficulty": "3",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": true,
+      "probability": false
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Stars Bars 24",
+    "question": "How many different assortments of pennies, nickels, dimes and quarters can Callie's coin holder contain if it has 15 coins total?",
+    "answer": "816",
+    "difficulty": "2",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": true
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Stars Bars 27",
+    "question": "Callie has 3 cats and a row of 4 cat beds.  Each cat bed can hold 1 or 2 cats, and each cat is in a bed.  How many unique sequences are there?",
+    "answer": "16",
+    "difficulty": "5",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": true
+    },
+    "solutionFile": ""
+  },
+ {
+    "id": "Stars Bars 28",
+    "question": "Callie randomly places 7 Moana and 6 Stitch figures in 4 distinguishable boxes.  If each box must have at least 1 of each type of figure, how many ways can Callie do this?",
+    "answer": "200",
+    "difficulty": "5",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": true
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Stars Bars 29",
+    "question": "Callie has 10 identical pencils to distribute to 5 people.  Two brothers, Aidan and HungFart, must get the same number of pencils.  If not every person is required to get a pencil, in how many ways can Callie distribute the pencils?",
+    "answer": "161",
+    "difficulty": "5",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": true
+    },
+    "solutionFile": ""
+  },
+  {
+    "id": "Stars Bars 30",
+    "question": "How many four-digit integers are there with a digit sum of 31?",
+    "answer": "56",
+    "difficulty": "5",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": true
+    },
+    "solutionFile": ""
+  }
+]

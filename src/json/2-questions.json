@@ -10,7 +10,8 @@
       "measurement": false,
       "geometry": false,
       "probability": false
-    }
+    },
+    "solutionFile": "q1_solution.txt"
   },
   {
     "id": 2,
@@ -23,6 +24,7 @@
       "measurement": false,
       "geometry": false,
       "probability": false
-    }
+    },
+    "solutionFile": ""
   }
 ]
