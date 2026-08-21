@@ -1,1 +1,0 @@
-console.log("Success! npm and Node are running in Bash.");
