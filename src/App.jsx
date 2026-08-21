@@ -545,7 +545,7 @@ export default function MathTrainer() {
 
               <div>
                 <div className="flex justify-between mb-8">
-                  <span className="bg-[#f0f4ff] text-[#6165ed] px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">Question {currentQuestion.id} / {questions.length}</span>
+                  <span className="bg-[#f0f4ff] text-[#6165ed] px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">Question: {currentQuestion.id}</span>
                   
                   {!isReviewMode && (
                     <div className={`flex gap-2 items-center ${shakeHearts ? 'animate-shake' : ''}`}> 

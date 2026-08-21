@@ -1,0 +1,227 @@
+[
+    {
+        "id": "Warmup 50",
+        "question": "A cube of edge length 4 units is removed from one corner of a cube of edge length 10 units.  What is the surface area of the resulting figure?",
+        "answer": "600",
+        "difficulty": "2",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 52",
+        "question": "What is the closest integer to 12.2 x 7.8?",
+        "answer": "95",
+        "difficulty": "2",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 54",
+        "question": "What value of x satisfies the equation $x + x/(2x + 4x) = 2$?  Express your answer as a fraction.",
+        "answer": "11/6",
+        "difficulty": "2",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 76",
+        "question": "Callie has 3 days to see 6 distinct movies.  How many ways can Callie arrange her schedule over 3 days so that she sees 2 different movies each day, if the order of movies on any given day does not matter?",
+        "answer": "90",
+        "difficulty": "2",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 82",
+        "question": "A triangle has vertices A(-1,2), B(5,8), and C(-1,-7).  Point D(x,y) is on side BC, and the area of triangle ACD is half the area of triangle ABC.  What is the value of x + y?",
+        "answer": "2",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 87",
+        "question": "A pair of 6-sided dice are rolled.  What is the probability that the product of the numbers shown is a multiple of 3?  Express your answer as a common fraction.",
+        "answer": "5/9",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 94",
+        "question": "A fair coin is flipped 10 times.  What is the probability that neither heads nor tails shows up twice in a row?  Express your answer as a common fraction.",
+        "answer": "1/512",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 98",
+        "question": "The odds that Callie will come in first in a race is 5 to 12.  This represents the ratio of the probability that she will come in first to the probability that she will not come in first.  What is the probability that someone else will come in first in the race?  Express your answer as a fraction.",
+        "answer": "12/17",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 102",
+        "question": "What is the sum of all solutions w to the equation $|4 - 5w| = 2$?  Express your answer as a common fraction.",
+        "answer": "8/5",
+        "difficulty": "3",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 105",
+        "question": "How many ordered triples (a, b, c) of non-negative integers exist for which a + b + c = 4?",
+        "answer": "15",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 112",
+        "question": "If $(\\sqrt{2})^n = \\sqrt[16]{16}$, what is the value of n?  Express your answer as a common fraction.",
+        "answer": "1/2",
+        "difficulty": "3",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 117",
+        "question": "Callie has a box of chess pieces, 16 black and 16 white.  She selects 3 pieces at random, without replacement.  What is the probability that all 3 chess pieces are the same color?  Express your answer as a common fraction.",
+        "answer": "7/31",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 119",
+        "question": "The graph of the line y = 6x - 5 intersects the graph of the parabola $y=x^2$ at 2 points (x,y).  What is the distance between those 2 points?  Express your answer in simplest radical form.",
+        "answer": "$4\\sqrt{37}$",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 121",
+        "question": "Circles P and Q are tangent to each other and have radii 18 units and 32 units respectively.  Circles P and Q are also tangential to a line segment.  Circle P touches the line segment at X, and circle Q touches the line segment at Y.  What is XY?",
+        "answer": "48",
+        "difficulty": "2",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 125",
+        "question": "In a geometric sequence of positive numbers, if the 1015th term is 245 and the 3015th term is 45, what is the value of the 2015th term?",
+        "answer": "105",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 129",
+        "question": "You have a map of 6 square blocks.  Mae's house is at the lower left corner M(0,0).  The library is at L(2,2) and the garden is at G(3,0).  How many different ways can Mae take to walk to from M to L, and then to G?  Assume she doesn't walk more than 7 blocks.",
+        "answer": "18",
+        "difficulty": "3",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    }
+
+]
