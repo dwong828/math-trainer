@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "question": "$48(98) + 3 (98) + 98 = $",
+    "answer": "9800",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": true,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 2,
+    "question": "If you divide 9762 by 5, your remainder will be ?",
+    "answer": "2",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": true,
+      "probability": false
+    }
+  },
+  {
+    "id": 3,
+    "question": "Three times the sum of 87 and 93 is the same as 4 x what number?",
+    "answer": "135",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 4,
+    "question": "What is the next number in this pattern? 6,7, 10, 16, 26, ...",
+    "answer": "41",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 5,
+    "question": "At Office Max a pencil and an eraser costs a total of 90 cents. Jon bought 3 pencils and 5 erasers and paid $3.80. What is the cost of one eraser (in cents)?",
+    "answer": "55",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 6,
+    "question": "If you divide 560 by .08, the quotient will be which of the following? Circle all letters that apply. A. larger than 560 B. Smaller than 560 C. 7,000 D. 560 x .08",
+    "answer": "A, C",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 7,
+    "question": "If you multiply .078 by what number will the product be 936? A. 1,200 B. 120 C. 9,000 D. 12,000",
+    "answer": "D",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 8,
+    "question": "If you multiply two odd numbers, the product will be ?  A. Even B. Odd C. Even only if one of the numbers is prime D. Odd only if one number is larger than the other number",
+    "answer": "B",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 9,
+    "question": "Sally’s sister, Belle, is 6 years older than Sally. If the sum of their  ages is 36, how old is Belle?",
+    "answer": "21",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 10,
+    "question": "Which of the following expressions are equivalent to 360? Circle all letters that apply.\nA. $2^3 * 3^2 * 5$  \nB. $600 \\div 3/5 $ \nC. $2400 \\div 8$ \nD. $\\frac{3}{4}$ of 480",
+    "answer": "A, D",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 11,
+    "question": "$10^6(34.45)$ ends in how many zeros?",
+    "answer": "4",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 12,
+    "question": "34,568 divided by 25 has a remainder of what number?",
+    "answer": "18",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 13,
+    "question": "5208 divided by 56 equals what number?",
+    "answer": "93",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 14,
+    "question": "$3.5 + 8.4 * 4 =$",
+    "answer": "37.1",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 15,
+    "question": "$\\frac{3}{4} + \\frac{1}{2} = \\frac{1}{4}$ + what fraction?",
+    "answer": "1",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 16,
+    "question": "$32 * \\frac{3}{4} = 72 \\div$ what number?",
+    "answer": "3",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 17,
+    "question": "$5.5 \\div \\frac{5}{8}= ?$\n\nExpress your answer as an improper fraction.",
+    "answer": "44/5",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 18,
+    "question": "38% of the students at Robert Allen High School are on sports teams. What fraction, in lowest terms, of the students are NOT on sports teams?",
+    "answer": "31/50",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 19,
+    "question": "A rectangular prism (think of a Kleenex box) is 9 inches long, 5 inches tall and has a volume of $270 in^3$. What is the width of the prism?",
+    "answer": "6",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 20,
+    "question": "A rectangle has a length of 12 cm and a width of 8 cm. Which of the following measures of rectangles would have the same area? Circle all letters that apply.  \nA. 16cm by 6cm  \nB. 24cm by 4cm \nC. 18cm by 4cm \nD. 36cm by 3cm",
+    "answer": "A, B",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 21,
+    "question": "Which of these perimeters would result in SQUARES with sides which are whole numbers? Circle all letters that apply. \nA. 20cm \nB. 25cm \nC. 44cm \nD. 56 cm",
+    "answer": "A, C, D",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 22,
+    "question": "The area of a triangle is 36 $cm^2$? The base is 12cm. What is the height? ",
+    "answer": "6",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 23,
+    "question": "If Angle A of a triangle is 54 degrees and Angle B is 66 degrees,  what is the measure of the third angle, Angle C?",
+    "answer": "60",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 24,
+    "question": "The two smaller angles of a parallelogram are both 44 degrees. What is the measure of one of the two larger angles?",
+    "answer": "136",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 25,
+    "question": "Line segment AB has these two endpoints: A(1,5) and C(2,8). Which one of these ordered pairs is on the same line segment? \nA. (4,12) \nB. (0,6) \nC. (1,7) \nD. (3,11)",
+    "answer": "D",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 26,
+    "question": "Which of these has 4 equal sides? \nA. RECTANGLE \nB. PARALLELOGRAM \nC. RHOMBUS \nD. TRAPEZOID",
+    "answer": "C",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 27,
+    "question": "There are 1100 students at Casmir Middle School. There are 350 sixth graders and 25 more seventh graders than sixth graders. How many eighth graders are there?",
+    "answer": "375",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 28,
+    "question": "In order to make the number 35,672 divisible by 5, you would have to do the following: Circle all letters that apply. \n\nA. Subtract 5 from the number\nB. Add 3 to the number \nC. Add 8 to the number \nD. Subtract 12 from the number",
+    "answer": "B, C, D",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 29,
+    "question": "At the Huntington Beach Snack Stand, Hamburgers cost \\$3.25, Cheeseburgers cost \\$3.75, Sodas cost \\$1.75 and an order of French Fries costs \\$2.25. Which of these orders could be purchased for less or equal to \\$10.00? Circle all letters that apply. \nA. Two Hamburgers and two orders of French Fries \nB. One Cheeseburger, one order of French Fries and two Sodas \nC. Three orders of French Fries and two Sodas \nD. One Cheeseburger, one order of French Fries and one Hamburger",
+    "answer": "B, D",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 30,
+    "question": "The number of juice boxes sold at the PTA Movie Night was three times the number of bags of popcorn sold. A bag of popcorn costs one-half as much as a juice box. If the PTA collected $120 for selling 120 juice boxes, how much did the PTA collect for bags of popcorn sold (in dollars)?",
+    "answer": "20",
+    "difficulty": "medium",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  }
+]

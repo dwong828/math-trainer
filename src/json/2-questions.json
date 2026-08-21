@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "question": "1 + 2 = ?",
+    "answer": "3",
+    "difficulty": "1",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 2,
+    "question": "2 + 3 = ?",
+    "answer": "5",
+    "difficulty": "2",
+    "categories": {
+      "algebra": false,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  }
+]

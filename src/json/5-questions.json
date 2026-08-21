@@ -1,0 +1,122 @@
+[
+ {
+    "id": 1,
+    "question": "$\\frac{3}{4}$ this is my fraction",
+    "answer": "1",
+    "type": "short",
+    "options": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+    },
+    "difficulty": "1",
+    "categories": {
+      "algebra": false,
+      "number theory": true,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+   {
+    "id": 29,
+    "question": "At the Huntington Beach Snack Stand, Hamburgers cost \\$3.25, Cheeseburgers cost \\$3.75, Sodas cost \\$1.75 and an order of French Fries costs \\$2.25. Which of these orders could be purchased for less or equal to \\$10.00? Circle all letters that apply.",
+    "answer": "B, D",
+    "type": "mcq",
+    "options": {
+      "A": "Two Hamburgers and two orders of French Fries",
+      "B": "One Cheeseburger, one order of French Fries and two Sodas",
+      "C": "Three orders of French Fries and two Sodas",
+      "D": "One Cheeseburger, one order of French Fries and one Hamburger"
+    },
+    "difficulty": "5",
+    "categories": {
+      "algebra": false,
+      "number theory": true,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 2,
+    "question": "If you divide 9762 by 5, your remainder will be?",
+    "answer": "2",
+    "type": "short",
+    "options": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+    },
+    "difficulty": "3",
+    "categories": {
+      "algebra": true,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 3,
+    "question": "Which of the following expressions are equivalent to 360? Select all the letters that apply.\n",
+    "answer": "A, D",
+    "type": "mcq",
+    "options": {
+      "A": "$2^3 * 3^2 * 5$",
+      "B": "$600 \\div 3/5 $",
+      "C": "$2400 \\div 8$",
+      "D": "$\\frac{3}{4}$ of 480"
+    },
+    "difficulty": "2",
+    "categories": {
+      "algebra": false,
+      "number theory": true,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 4,
+    "question": "At Office Max a pencil and an eraser costs a total of 90 cents. Jon bought 3 pencils and 5 erasers and paid \\$3.80. What is \\$huh the cost of one eraser (in cents)?",
+    "answer": "55",
+    "type": "short",
+    "options": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+    },
+    "difficulty": "2",
+    "categories": {
+      "algebra": true,
+      "number theory": false,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  },
+  {
+    "id": 5,
+    "question": "$5.5 \\div \\frac{5}{8}= ?$\n\nExpress your answer as an improper fraction.",
+    "answer": "44/5",
+    "type": "short",
+    "options": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+    },
+    "difficulty": "1",
+    "categories": {
+      "algebra": false,
+      "number theory": true,
+      "measurement": false,
+      "geometry": false,
+      "probability": false
+    }
+  }
+]
