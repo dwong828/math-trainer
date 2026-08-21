@@ -338,7 +338,17 @@ export default function MathTrainer() {
              </div>
           </div>
           <div className="flex gap-4">
-            <button onClick={() => {setIsReviewMode(true); setIsFinished(false); setIndex(0);}} className="flex-1 bg-[#6165ed] text-white py-4 rounded-2xl font-black shadow-[0_5px_0_rgb(79,83,209)] cursor-pointer">Review</button>
+            <button 
+              onClick={() => {
+                setIsReviewMode(true); 
+                setIsFinished(false); 
+                setIndex(0);
+                setShowAnswer(false);
+              }} 
+              className="flex-1 bg-[#6165ed] text-white py-4 rounded-2xl font-black shadow-[0_5px_0_rgb(79,83,209)] cursor-pointer"
+            >
+              Review
+            </button>
             <button onClick={() => window.location.reload()} className="flex-1 bg-gray-100 text-gray-500 py-4 rounded-2xl font-black cursor-pointer">Restart</button>
           </div>
         </div>
@@ -385,66 +395,74 @@ export default function MathTrainer() {
         <div className="flex flex-col md:flex-row gap-6 items-start">
           
           {/* Sidebar Panel */}
-          <aside className="w-full md:w-64 bg-black/20 backdrop-blur-md rounded-[30px] p-5 border border-white/10 shrink-0">
-            <h3 className="text-xs font-black uppercase tracking-widest text-white/70 mb-4 px-2">
-              Questions ({questions.length})
-            </h3>
-            <div className="flex flex-col gap-3 max-h-[520px] overflow-y-auto no-scrollbar p-1.5">
-              {questions.map((q, qIdx) => {
-                const qHistory = history.find(h => h.id === q.id);
-                const isCurrent = qIdx === index;
+          <aside className="w-full md:w-64 bg-black/20 backdrop-blur-md rounded-[30px] p-5 border border-white/10 shrink-0 flex flex-col justify-between">
+            <div>
+              <h3 className="text-xs font-black uppercase tracking-widest text-white/70 mb-4 px-2">
+                Questions ({questions.length})
+              </h3>
+              <div className="flex flex-col gap-3 max-h-[460px] overflow-y-auto no-scrollbar p-1.5">
+                {questions.map((q, qIdx) => {
+                  const qHistory = history.find(h => h.id === q.id);
+                  const isCurrent = qIdx === index;
 
-                let statusBadge = null;
-                let borderClass = isCurrent ? "ring-2 ring-white border-white z-10" : "border-white/10 hover:border-white/40";
-                let bgClass = "bg-white/10 hover:bg-white/20";
-                let attemptStars = 0;
+                  let statusBadge = null;
+                  let borderClass = isCurrent ? "ring-2 ring-white border-white z-10" : "border-white/10 hover:border-white/40";
+                  let bgClass = "bg-white/10 hover:bg-white/20";
+                  let attemptStars = 0;
 
-                if (qHistory) {
-                  if (qHistory.status === "Correct") {
-                    if (qHistory.attempts === 1) {
-                      // 1st attempt correct = GREEN
-                      bgClass = isCurrent ? "bg-green-500" : "bg-green-600/80 hover:bg-green-600";
-                    } else {
-                      // More than 1 attempt correct = YELLOW
+                  if (qHistory) {
+                    if (qHistory.status === "Correct") {
+                      if (qHistory.attempts === 1) {
+                        bgClass = isCurrent ? "bg-green-500" : "bg-green-600/80 hover:bg-green-600";
+                      } else {
+                        bgClass = isCurrent ? "bg-yellow-500" : "bg-yellow-600/80 hover:bg-yellow-600";
+                      }
+                      statusBadge = <CheckCircle2 size={16} className="text-white shrink-0" />;
+                      attemptStars = qHistory.attempts;
+                    } else if (qHistory.status === "Failed") {
+                      bgClass = isCurrent ? "bg-red-500" : "bg-red-600/80 hover:bg-red-600";
+                      statusBadge = <XCircle size={16} className="text-white shrink-0" />;
+                      attemptStars = qHistory.attempts;
+                    } else if (qHistory.status === "Skipped") {
                       bgClass = isCurrent ? "bg-yellow-500" : "bg-yellow-600/80 hover:bg-yellow-600";
+                      statusBadge = <HelpCircle size={16} className="text-white shrink-0" />;
+                      attemptStars = 0;
                     }
-                    statusBadge = <CheckCircle2 size={16} className="text-white shrink-0" />;
-                    // Exact attempt count for star display
-                    attemptStars = qHistory.attempts;
-                  } else if (qHistory.status === "Failed") {
-                    bgClass = isCurrent ? "bg-red-500" : "bg-red-600/80 hover:bg-red-600";
-                    statusBadge = <XCircle size={16} className="text-white shrink-0" />;
-                    attemptStars = qHistory.attempts;
-                  } else if (qHistory.status === "Skipped") {
-                    bgClass = isCurrent ? "bg-yellow-500" : "bg-yellow-600/80 hover:bg-yellow-600";
-                    statusBadge = <HelpCircle size={16} className="text-white shrink-0" />;
-                    attemptStars = 0;
                   }
-                }
 
-                return (
-                  <button
-                    key={q.id}
-                    onClick={() => jumpToQuestion(qIdx)}
-                    className={`relative flex items-center justify-between w-full px-4 py-3 rounded-2xl font-black text-base transition-all duration-200 border cursor-pointer ${bgClass} ${borderClass}`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono text-sm opacity-90">
-                        Q{q.id} ({q.difficulty ?? 1})
-                      </span>
-                      {statusBadge}
-                    </div>
+                  return (
+                    <button
+                      key={q.id}
+                      onClick={() => jumpToQuestion(qIdx)}
+                      className={`relative flex items-center justify-between w-full px-4 py-3 rounded-2xl font-black text-base transition-all duration-200 border cursor-pointer ${bgClass} ${borderClass}`}
+                    >
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono text-sm opacity-90">
+                          Q{q.id} ({q.difficulty ?? 1})
+                        </span>
+                        {statusBadge}
+                      </div>
 
-                    {/* Displays stars matching attempt count */}
-                    <div className="flex gap-0.5 items-center">
-                      {attemptStars > 0 && Array.from({ length: attemptStars }).map((_, sIdx) => (
-                        <Star key={sIdx} size={12} className="text-yellow-400 fill-yellow-400" />
-                      ))}
-                    </div>
-                  </button>
-                );
-              })}
+                      <div className="flex gap-0.5 items-center">
+                        {attemptStars > 0 && Array.from({ length: attemptStars }).map((_, sIdx) => (
+                          <Star key={sIdx} size={12} className="text-yellow-400 fill-yellow-400" />
+                        ))}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
+
+            {/* Back to Summary Button under sidebar during Review Mode */}
+            {isReviewMode && (
+              <button 
+                onClick={() => setIsFinished(true)} 
+                className="mt-4 w-full bg-[#6165ed] text-white py-3 px-4 rounded-2xl font-black shadow-[0_4px_0_rgb(79,83,209)] active:translate-y-0.5 hover:bg-[#5256e0] transition-all cursor-pointer text-sm"
+              >
+                Back to Summary
+              </button>
+            )}
           </aside>
 
           {/* Main Question Workspace */}
@@ -541,7 +559,7 @@ export default function MathTrainer() {
 
                 {isReviewMode && !isQuestionCorrect && showAnswer && (
                   <div className="mt-6 bg-green-50 border-2 border-green-200 p-6 rounded-2xl animate-in fade-in slide-in-from-top-4">
-                    <p className="text-xs font-black text-green-600 uppercase mb-1">Solution:</p>
+                    <p className="text-xs font-black text-green-600 uppercase mb-1">Answer:</p>
                     <p className="text-3xl font-black text-green-700">{currentQuestion.answer}</p>
                   </div>
                 )}
@@ -566,7 +584,6 @@ export default function MathTrainer() {
                         {showAnswer ? "Hide Answer" : "Reveal Answer"}
                       </button>
                     )}
-                    {index === history.length - 1 && <button onClick={() => setIsFinished(true)} className="bg-[#6165ed] text-white px-8 py-4 rounded-2xl font-black ml-auto cursor-pointer">Back to Summary</button>}
                   </div>
                 )}
               </div>
