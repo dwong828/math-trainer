@@ -478,12 +478,7 @@ export default function MathTrainer() {
 
                   if (qHistory) {
                     if (qHistory.status === "Correct") {
-                      if (qHistory.attempts === 1) {
-                        bgClass = isCurrent ? "bg-green-500" : "bg-green-600/80 hover:bg-green-600";
-                      } else {
-                        // Lighter shade of yellow for multi-attempt correct answers
-                        bgClass = isCurrent ? "bg-yellow-400" : "bg-yellow-500/80 hover:bg-yellow-500";
-                      }
+                      bgClass = isCurrent ? "bg-green-500" : "bg-green-600/80 hover:bg-green-600";
                       statusBadge = <CheckCircle2 size={16} className="text-white shrink-0" />;
                       attemptStars = qHistory.attempts;
                     } else if (qHistory.status === "Failed") {

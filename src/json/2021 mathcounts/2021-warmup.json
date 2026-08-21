@@ -211,7 +211,7 @@
     },
     {
         "id": "Warmup 129",
-        "question": "You have a map of 6 square blocks.  Mae's house is at the lower left corner M(0,0).  The library is at L(2,2) and the garden is at G(3,0).  How many different ways can Mae take to walk to from M to L, and then to G?  Assume she doesn't walk more than 7 blocks.",
+        "question": "You have a map of 6 square blocks.  Mae's house is at the lower left corner M(0,0).  The library is at L(2,2) and the garden is at G(3,0).  How many different ways can Mae walk from M to L, and then to G?  Assume she doesn't walk more than 7 blocks.",
         "answer": "18",
         "difficulty": "3",
         "categories": {
@@ -219,6 +219,76 @@
         "number theory": false,
         "measurement": false,
         "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 132",
+        "question": "How many different values of x satisfy the equation $|x^2-9| = |2x + 6|$?",
+        "answer": "3",
+        "difficulty": "3",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 133",
+        "question": "An ant walks around a rectangle from point A to B to C to D, a distance of 28.25 units.  A ladybug walks from point B to C to D to A, a distance of 25 units.  What is the perimeter of the rectangle?  Express as a common fraction.",
+        "answer": "71/2",
+        "difficulty": "3",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 135",
+        "question": "A fair coin is flipped 8 times.  What is the probability that it lands heads up exactly 4 times.  Express your answer as a common fraction.",
+        "answer": "35/128",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 136",
+        "question": "Callie wants to buy a dozen donuts.  There are 3 flavors (jelly, chocolate, vanilla).  If Callie wants at least 2 jelly donuts, how many different combinations of donuts can she use to create a box of a dozen donuts?",
+        "answer": "66",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 138",
+        "question": "A rectangle is inscribed in a circle.  If one side of the rectangle is 6 and the area of the circle is $25\\pi$, what is the area of the rectangle?",
+        "answer": "48",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
         "probability": false
         },
         "solutionFile": ""
