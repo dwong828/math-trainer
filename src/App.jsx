@@ -556,7 +556,17 @@ export default function MathTrainer() {
                 </div>
                 
                 <div className="text-3xl font-medium mb-10 leading-snug">{renderContent(currentQuestion.question)}</div>
-                
+                {/* Render Question Image if available */}
+                {currentQuestion.image && (
+                  <div className="mb-8 flex justify-center">
+                    <img 
+                      src={currentQuestion.image} 
+                      alt={`Diagram for question ${currentQuestion.id}`} 
+                      className="max-h-64 object-contain rounded-2xl border border-gray-200 shadow-sm"
+                    />
+                  </div>
+                )}
+
                 {currentQuestion.type === 'mcq' ? (
                   <div className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

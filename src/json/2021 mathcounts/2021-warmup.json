@@ -5,11 +5,11 @@
         "answer": "600",
         "difficulty": "2",
         "categories": {
-        "algebra": false,
-        "number theory": false,
-        "measurement": false,
-        "geometry": true,
-        "probability": false
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": true,
+            "probability": false
         },
         "solutionFile": ""
     },
@@ -75,14 +75,30 @@
         "answer": "5/9",
         "difficulty": "5",
         "categories": {
-        "algebra": false,
-        "number theory": false,
-        "measurement": false,
-        "geometry": false,
-        "probability": true
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": true
         },
         "solutionFile": ""
     },
+    {
+        "id": "Warmup 93",
+        "question": "In the figure shown, what is the value on n?",
+        "answer": "23",
+        "difficulty": "3",
+        "categories": {
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": true,
+            "probability": false
+        },
+        "solutionFile": "",
+        "image": "solutions/2021-mathcounts/2021-warmup-93.jpeg"
+    },
+
     {
         "id": "Warmup 94",
         "question": "A fair coin is flipped 10 times.  What is the probability that neither heads nor tails shows up twice in a row?  Express your answer as a common fraction.",
@@ -183,9 +199,9 @@
     },
     {
         "id": "Warmup 121",
-        "question": "Circles P and Q are tangent to each other and have radii 18 units and 32 units respectively.  Circles P and Q are also tangential to a line segment.  Circle P touches the line segment at X, and circle Q touches the line segment at Y.  What is XY?",
+        "question": "Circles P and Q are tangent to each other and have radii 18 units and 32 units respectively.  Circles P and Q are also tangential to a line segment at points X and Y. What is XY?",
         "answer": "48",
-        "difficulty": "2",
+        "difficulty": "5",
         "categories": {
         "algebra": false,
         "number theory": false,
@@ -193,8 +209,24 @@
         "geometry": true,
         "probability": false
         },
-        "solutionFile": ""
+        "solutionFile": "",
+        "image":"solutions/2021-mathcounts/2021-warmup-121.jpeg"
     },
+     {
+        "id": "Warmup 123",
+        "question": "If line l intersects parallel lines m and n, what is the value of p + q?",
+        "answer": "104",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": "",
+        "image":"solutions/2021-mathcounts/2021-warmup-123.jpeg"
+    },   
     {
         "id": "Warmup 125",
         "question": "In a geometric sequence of positive numbers, if the 1015th term is 245 and the 3015th term is 45, what is the value of the 2015th term?",
