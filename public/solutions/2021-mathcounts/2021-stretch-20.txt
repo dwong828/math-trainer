@@ -1,0 +1,11 @@
+Since the circle passes through $(0,0)$ and $(0, 17\sqrt{2})$, the $y$-coordinate of the center $k$ must lie midway between these two $y$-intercepts
+
+So the center is $\left(-\frac{17\sqrt{2}}{2}, \frac{17\sqrt{2}}{2}\right)$.
+
+The region in the 3rd quadrant is a circular segment formed by the chord connecting $(-17\sqrt{2}, 0)$ and $(0,0)$.
+
+$\text{Area of Triangle} = \frac{1}{2} \times 17 \times 17 = 144.5$
+$\text{Area of Quarter Circle} = \frac{\pi \times 17^2}{4} = 72.25 \pi \approx 226.98$
+
+$\text{Area in 3rd quadrant} = 226.980 - 144.5 = 82.5$
+

@@ -1,0 +1,34 @@
+Step 1: Set Up the Right Triangle
+Let the radius of Circle $P$ be $r_1 = 18$ meters, and the radius of Circle $Q$ be $r_2 = 32$ meters.
+
+Distance between centers ($PQ$):
+Since the two circles are externally tangent to each other, the distance between their centers is the sum of their radii:
+$PQ = r_1 + r_2 = 18 + 32 = 50$
+
+Form a right triangle:
+Draw segment $PX$ perpendicular to line $XY$ and segment $QY$ perpendicular to line $XY$.
+
+Construct a rectangle $XYHZ$ by drawing a line segment from center $P$ perpendicular to line segment $QY$, intersecting $QY$ at point $H$.
+
+In right triangle $\triangle PHQ$:
+The hypotenuse is $PQ = 50$.
+One leg is $PH = XY$ (the length of the common tangent).
+The other leg is $QH = r_2 - r_1 = 32 - 18 = 14$.
+
+Step 2: Apply the Pythagorean Theorem
+$\text{In } \triangle PHQ: \quad PH^2 + QH^2 = PQ^2$
+
+$(XY)^2 + 14^2 = 50^2$
+
+$(XY)^2 + 196 = 2500$
+
+$(XY)^2 = 2500 - 196 = 2304$
+
+$XY = \sqrt{2304} = 48$
+
+Alternative Direct Formula
+For two externally tangent circles with radii $r_1$ and $r_2$, the length of their common external tangent segment is given directly by:
+
+$XY = 2\sqrt{r_1 r_2} = 2\sqrt{18 \times 32} = 2\sqrt{576} = 2 \times 24 = 48$
+
+The length of $XY$ is 48 meters.

@@ -1,0 +1,19 @@
+To find $x + y$, we first determine the location of point $D(x, y)$ using the properties of triangle areas.
+
+Step 1: Use the Area Ratio to Find Point D
+Two triangles that share the same vertex ($A$) and have their opposite bases along the same line ($BC$) have areas proportional to their base lengths.
+
+Since $D$ lies on side $BC$ and the area of $\triangle ACD$ is half the area of $\triangle ABC$, point $D$ must be the midpoint of segment $BC$.
+
+Step 2: Calculate the Coordinates of D
+Using the midpoint formula for $B(5, 8)$ and $C(-1, -7)$:
+
+$x = \frac{x_B + x_C}{2} = \frac{5 + (-1)}{2} = \frac{4}{2} = 2$
+
+$y = \frac{y_B + y_C}{2} = \frac{8 + (-7)}{2} = \frac{1}{2}$
+
+So, point $D$ is $\left(2, \frac{1}{2}\right)$.
+
+Step 3: Compute $x + y$
+$x + y = 2 + \frac{1}{2} = \frac{5}{2} = 2.5$
+

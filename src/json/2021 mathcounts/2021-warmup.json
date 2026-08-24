@@ -58,7 +58,7 @@
     {
         "id": "Warmup 82",
         "question": "A triangle has vertices A(-1,2), B(5,8), and C(-1,-7).  Point D(x,y) is on side BC, and the area of triangle ACD is half the area of triangle ABC.  What is the value of x + y?",
-        "answer": "2",
+        "answer": "2.5",
         "difficulty": "5",
         "categories": {
         "algebra": false,
@@ -67,7 +67,7 @@
         "geometry": true,
         "probability": false
         },
-        "solutionFile": ""
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-82.txt"
     },
     {
         "id": "Warmup 87",
@@ -81,7 +81,7 @@
             "geometry": false,
             "probability": true
         },
-        "solutionFile": ""
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-87.txt"
     },
     {
         "id": "Warmup 93",
@@ -209,7 +209,7 @@
         "geometry": true,
         "probability": false
         },
-        "solutionFile": "",
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-121.txt",
         "image":"solutions/2021-mathcounts/2021-warmup-121.jpeg"
     },
      {
@@ -239,7 +239,7 @@
         "geometry": false,
         "probability": true
         },
-        "solutionFile": ""
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-125.txt"
     },
     {
         "id": "Warmup 129",

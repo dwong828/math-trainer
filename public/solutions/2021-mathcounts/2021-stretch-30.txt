@@ -1,0 +1,41 @@
+Method: Digits Analysis & Permutations
+Since the maximum sum of 4 single digits is $9 + 9 + 9 + 9 = 36$, a sum of 31 is relatively close to the maximum. We can find all possible sets of four digits $\{a, b, c, d\}$ that add up to 31:
+
+Find digit combinations:
+Four 9s and one smaller:
+$9 + 9 + 9 + 4 = 31 \implies \{9, 9, 9, 4\}$
+
+Three 9s, one 8, one smaller:
+$9 + 9 + 8 + 5 = 31 \implies \{9, 9, 8, 5\}$
+
+Three 9s, two 7s (or equivalent combinations with two 8s):
+$9 + 9 + 7 + 6 = 31 \implies \{9, 9, 7, 6\}$
+$9 + 8 + 8 + 6 = 31 \implies \{9, 8, 8, 6\}$
+$9 + 8 + 7 + 7 = 31 \implies \{9, 8, 7, 7\}$
+
+Two 9s, three 8s:
+$8 + 8 + 8 + 7 = 31 \implies \{8, 8, 8, 7\}$
+
+(Note: No digit can be 0 or smaller than 4, as three 9s with 3 would sum to 30, requiring four digits $\ge 4$. Thus, $a$ can never be zero for any of these combinations, so every digit permutation forms a valid 4-digit integer.)
+
+Count Permutations for Each Set
+Set $\{9, 9, 9, 4\}$: (3 nines, 1 four)
+$\frac{4!}{3!} = 4$
+
+Set $\{9, 9, 8, 5\}$: (2 nines, 1 eight, 1 five)
+$\frac{4!}{2!} = 12$
+
+Set $\{9, 9, 7, 6\}$: (2 nines, 1 seven, 1 six)
+$\frac{4!}{2!} = 12$
+
+Set $\{9, 8, 8, 6\}$: (1 nine, 2 eights, 1 six)
+$\frac{4!}{2!} = 12$
+
+Set $\{9, 8, 7, 7\}$: (1 nine, 1 eight, 2 sevens)
+$\frac{4!}{2!} = 12$
+
+Set $\{8, 8, 8, 7\}$: (3 eights, 1 seven)
+$\frac{4!}{3!} = 4$
+
+Sum the Possibilities
+$\text{Total 4-digit integers} = 4 + 12 + 12 + 12 + 12 + 4 = 56$

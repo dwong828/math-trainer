@@ -1,0 +1,20 @@
+Let $D$ and $E$ be the centers of the circles, and let $A$ and $B$ be the two points where the circumferences intersect.  Since each circle passes through the other's center, $DE = 6$ cm.  
+The distances $DA, DB, EA,$ and $EB$ are all radii of the circles, so each equals $6$ cm.
+Triangles $\triangle DAB$ and $\triangle EAB$ are formed by connecting these points. Since $DA = DE = AE = 6$, triangle $\triangle ADE$ is an equilateral triangle with side length $s = 6$. Likewise, $\triangle BDE$ is also an equilateral triangle with side length $6$.
+
+$\angle ADB = \angle ADE + \angle BDE = 60^\circ + 60^\circ = 120^\circ$.
+
+$\text{Area}_{\text{sector}} = \frac{120^\circ}{360^\circ} \times \pi r^2 = \frac{1}{3} \pi (6^2) = 12\pi$
+
+The overlap region consists of two $120^\circ$ sectors (one from circle $D$ and one from circle $E$) minus the area of the rhombus $ADBE$ (which is counted twice when adding the sectors).
+The rhombus $ADBE$ consists of two equilateral triangles of side length $6$:
+
+$\text{Area}_{\text{triangle}} = \frac{\sqrt{3}}{4} s^2 = \frac{\sqrt{3}}{4} (36) = 9\sqrt{3}$
+$\text{Area}_{\text{rhombus}} = 2 \times 9\sqrt{3} = 18\sqrt{3}$
+
+The area of the shaded overlap is:
+$\text{Area}_{\text{overlap}} = 2 \times \text{Area}_{\text{sector}} - \text{Area}_{\text{rhombus}} = 2(12\pi) - 18\sqrt{3} = 24\pi - 18\sqrt{3}$
+
+$a = 24$
+$b = -18$
+$c = 3$

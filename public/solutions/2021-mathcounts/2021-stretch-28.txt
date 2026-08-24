@@ -1,0 +1,17 @@
+Step 1: Distribute the 7 Scuba Figures
+Method: First, place 1 scuba figure into each of the 4 boxes. This uses up 4 figures, leaving $7 - 4 = 3$ scuba figures remaining to be distributed freely among the 4 boxes with no restrictions.
+
+Stars and Bars Formula: Distributing $n$ identical items into $k$ distinguishable boxes is given by $\binom{n + k - 1}{k - 1}$.
+
+$\text{Ways for Scuba} = \binom{3 + 4 - 1}{4 - 1} = \binom{6}{3} = \frac{6 \times 5 \times 4}{3 \times 2 \times 1} = 20$
+
+Step 2: Distribute the 6 Diving Figures
+Method: Place 1 diving figure into each of the 4 boxes. This uses up 4 figures, leaving $6 - 4 = 2$ diving figures remaining to be distributed freely among the 4 boxes.
+
+Stars and Bars Formula:
+$\text{Ways for Diving} = \binom{2 + 4 - 1}{4 - 1} = \binom{5}{3} = \frac{5 \times 4}{2 \times 1} = 10$
+
+Step 3: Total Number of Ways
+By the Fundamental Counting Principle, multiply the ways to distribute the scuba figures by the ways to distribute the diving figures:
+
+$\text{Total Ways} = 20 \times 10 = 200$

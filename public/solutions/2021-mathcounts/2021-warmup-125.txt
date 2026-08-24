@@ -1,0 +1,34 @@
+In a geometric sequence of positive numbers, any term is the geometric mean of two terms that are equally spaced before and after it.
+
+Step 1: Set Up the Term Relationship
+Let the terms of the geometric sequence be $a_n = a \cdot r^{n-1}$.
+
+$a_{1015} = 245$
+$a_{3015} = 45$
+
+Notice that the 2015th term ($a_{2015}$) is located exactly halfway between the 1015th term and the 3015th term in the index sequence:
+$\frac{1015 + 3015}{2} = \frac{4030}{2} = 2015$
+
+Step 2: Use the Common Ratio Property
+Let $d = 1000$ be the difference in indices:
+
+$a_{2015} = a_{1015} \cdot r^{1000}$
+
+$a_{3015} = a_{2015} \cdot r^{1000}$
+
+Dividing these equations gives:
+$\frac{a_{2015}}{a_{1015}} = \frac{a_{3015}}{a_{2015}} = r^{1000}$
+
+Cross-multiplying:
+$(a_{2015})^2 = a_{1015} \cdot a_{3015}$
+
+Step 3: Compute $a_{2015}$
+$(a_{2015})^2 = 245 \times 45$
+
+Factor $245$ and $45$ into primes to make finding the square root straightforward:
+$245 = 5 \times 49 = 5 \times 7^2$
+$45 = 5 \times 9 = 5 \times 3^2$
+
+$(a_{2015})^2 = (5 \times 7^2) \times (5 \times 3^2) = 5^2 \times 7^2 \times 3^2 = (5 \times 7 \times 3)^2$
+
+$a_{2015} = 5 \times 7 \times 3 = 105$

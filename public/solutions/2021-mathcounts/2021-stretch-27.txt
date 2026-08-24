@@ -1,0 +1,9 @@
+We look for non-negative integer solutions $(c_1, c_2, c_3, c_4)$ to $c_1 + c_2 + c_3 + c_4 = 3$ with $0 \le c_i \le 2$:
+
+1. Configurations of type $(1, 1, 1, 0)$:
+     Choose 3 beds to have 1 cat each: $\binom{4}{3} = 4$
+
+2. Configurations of type $(2, 1, 0, 0)$:
+     Choose which bed has 2 cats ($4$ choices), then choose which remaining bed has 1 cat ($3$ choices): $4 \times 3 = 12$
+    
+$\text{Total (Indistinguishable Cats)} = 4 + 12 = 16$

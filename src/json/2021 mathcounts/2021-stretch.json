@@ -53,7 +53,8 @@
       "geometry": true,
       "probability": false
     },
-    "solutionFile": ""
+    "solutionFile": "solutions/2021-mathcounts/2021-stretch-17.txt",
+    "image":"solutions/2021-mathcounts/2021-stretch-17.jpeg"
   },
   {
     "id": "Circle 18",
@@ -74,7 +75,8 @@
       "geometry": true,
       "probability": false
     },
-    "solutionFile": ""
+    "solutionFile": "",
+    "image":"solutions/2021-mathcounts/2021-stretch-18.jpeg"
   },
   {
     "id": "Circle 20",
@@ -88,7 +90,7 @@
       "geometry": true,
       "probability": false
     },
-    "solutionFile": ""
+    "solutionFile": "solutions/2021-mathcounts/2021-stretch-20.txt"
   },
   {
     "id": "Stars Bars 24",
@@ -116,11 +118,11 @@
       "geometry": false,
       "probability": true
     },
-    "solutionFile": ""
+    "solutionFile": "solutions/2021-mathcounts/2021-stretch-27.txt"
   },
  {
     "id": "Stars Bars 28",
-    "question": "Callie randomly places 7 Moana and 6 Stitch figures in 4 distinguishable boxes.  If each box must have at least 1 of each type of figure, how many ways can Callie do this?",
+    "question": "Callie randomly places 7 Scuba and 6 Diving figures in 4 distinguishable boxes.  If each box must have at least 1 of each type of figure, how many ways can Callie do this?",
     "answer": "200",
     "difficulty": "5",
     "categories": {
@@ -130,7 +132,7 @@
       "geometry": false,
       "probability": true
     },
-    "solutionFile": ""
+    "solutionFile": "solutions/2021-mathcounts/2021-stretch-28.txt"
   },
   {
     "id": "Stars Bars 29",
@@ -144,7 +146,7 @@
       "geometry": false,
       "probability": true
     },
-    "solutionFile": ""
+    "solutionFile": "solutions/2021-mathcounts/2021-stretch-29.txt"
   },
   {
     "id": "Stars Bars 30",
@@ -158,6 +160,6 @@
       "geometry": false,
       "probability": true
     },
-    "solutionFile": ""
+    "solutionFile": "solutions/2021-mathcounts/2021-stretch-30.txt"
   }
 ]

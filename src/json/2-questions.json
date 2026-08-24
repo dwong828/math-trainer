@@ -1,30 +1,16 @@
 [
   {
-    "id": 1,
-    "question": "1 + 2 = ?",
-    "answer": "3",
-    "difficulty": "1",
-    "categories": {
-      "algebra": false,
-      "number theory": false,
-      "measurement": false,
-      "geometry": false,
-      "probability": false
-    },
-    "solutionFile": "q1_solution.txt"
-  },
-  {
-    "id": 2,
-    "question": "2 + 3 = ?",
-    "answer": "5",
-    "difficulty": "2",
-    "categories": {
-      "algebra": false,
-      "number theory": false,
-      "measurement": false,
-      "geometry": false,
-      "probability": false
-    },
-    "solutionFile": ""
+   "id": "Warmup 125",
+        "question": "In a geometric sequence of positive numbers, if the 1015th term is 245 and the 3015th term is 45, what is the value of the 2015th term?",
+        "answer": "105",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-125.txt"
   }
 ]

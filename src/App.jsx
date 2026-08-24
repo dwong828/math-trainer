@@ -129,7 +129,7 @@ export default function MathTrainer() {
     }
 
     setIsSolutionLoading(true);
-    fetch(`/solutions/${name}`)
+    fetch(`${name}`)
       .then((res) => {
         if (!res.ok) throw new Error('Solution file not found');
         return res.text();

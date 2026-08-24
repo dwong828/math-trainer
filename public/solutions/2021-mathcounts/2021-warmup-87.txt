@@ -1,0 +1,20 @@
+To find the probability that the product of two rolled dice is a multiple of 3, it is easiest to find the probability of the complement (that the product is not a multiple of 3) and subtract it from 1.
+
+Step 1: Identify Numbers Not Divisible by 3
+A product of two numbers is not a multiple of 3 if and only if neither number is a multiple of 3.
+
+On a standard 6-sided die, the possible outcomes are $\{1, 2, 3, 4, 5, 6\}$.
+The multiples of 3 are $\{3, 6\}$ (2 outcomes).
+The numbers not divisible by 3 are $\{1, 2, 4, 5\}$ (4 outcomes).
+
+Step 2: Calculate the Complementary Probability
+The probability that a single die does not roll a multiple of 3 is:
+$P(\text{not multiple of 3}) = \frac{4}{6} = \frac{2}{3}$
+
+Since the two dice rolls are independent, the probability that neither die rolls a multiple of 3 is:
+$P(\text{product not multiple of 3}) = \frac{2}{3} \times \frac{2}{3} = \frac{4}{9}$
+
+Step 3: Subtract from 1
+$P(\text{product is multiple of 3}) = 1 - \frac{4}{9} = \frac{5}{9}$
+
+The probability that the product is a multiple of 3 is 5/9.
