@@ -1,0 +1,199 @@
+[
+    {
+        "id": "Workout 148",
+        "question": "Candy can be packaged in boxes of 1, 5, or 16 candies.  You receive an order for 238 candies.  What is the least number of boxes needed to fill this order?",
+        "answer": "19",
+        "difficulty": "3",
+        "categories": {
+            "algebra": false,
+            "number theory": true,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 152",
+        "question": "Apples cost $45.99 per pound.  There are 16 ounces in a pound.  How much will 0.70 ounces of apples cost?",
+        "answer": "2.01",
+        "difficulty": "3",
+        "categories": {
+            "algebra": true,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 155",
+        "question": "Callie biked 4 miles from home to school at an average speed of 10 mi/h.  He walked home at a speed of 3 mi/h.  What was her average speed on the trip to school and back home?   Express your answer as a decimal to the nearest tenth.",
+        "answer": "4.6",
+        "difficulty": "3",
+        "categories": {
+            "algebra": false,
+            "number theory": true,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 157",
+        "question": "It takes 46 seconds to fill a 2-ounce cup with ingredient A and 33 seconds to fill it with ingredient B.  What is the absolute difference in the number of minutes it takes to fill the cup with ingredients A and B?  Express your answer as decimal to the nearest hundredth.",
+        "answer": "0.22",
+        "difficulty": "5",
+        "categories": {
+            "algebra": true,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 158",
+        "question": "A theater holds 290 people.  If 261 people are in attendance, what percent of the theater is empty?",
+        "answer": "4.6",
+        "difficulty": "3",
+        "categories": {
+            "algebra": false,
+            "number theory": true,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 160",
+        "question": "There are 2.54 cm in an inch and 5280 feet in a mile.  How many centimeters are in a mile?  Express your answer to the nearest thousand.",
+        "answer": "160000",
+        "difficulty": "3",
+        "categories": {
+            "algebra": false,
+            "number theory": true,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 163",
+        "question": "Four points have these coordinates: A(5,7), B(7,1), C(17,m) and D(-1,3).  If line segments AB and CD are perpendicular, what is the value of m?",
+        "answer": "9",
+        "difficulty": "4",
+        "categories": {
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": true,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 166",
+        "question": "A game console is marked as 15% off its original price.  Callie buys it and pays $250.75.  By how much was the original price reduced?",
+        "answer": "44.25",
+        "difficulty": "3",
+        "categories": {
+            "algebra": true,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 178",
+        "question": "If Callie can mow the yard in 1.5 hours and Aidan can mow the same yard in 45 minutes, how many minutes will it take them to do the job together?",
+        "answer": "30",
+        "difficulty": "3",
+        "categories": {
+            "algebra": false,
+            "number theory": true,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 180",
+        "question": "The formula to convert Celsius (C) to Fahrenheit (F) is $F = \\frac{9}{5} C + 32$.  If Callie misreads the Celsius temperature by $2\\degree$, by how many degrees Fahrenheit will she be off?  Express your answer as a decimal to the nearest tenth.",
+        "answer": "3.6",
+        "difficulty": "4",
+        "categories": {
+            "algebra": true,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 181",
+        "question": "The positive number A is 160% of another number B.  What percent of 25A is 16B?",
+        "answer": "40",
+        "difficulty": "5",
+        "categories": {
+            "algebra": true,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 182",
+        "question": "Callie follows a path from A to C, always moving either up or to the right.  What is the probability that her path goes through B?  Express your answer as a common fraction.",
+        "answer": "9/17",
+        "difficulty": "5",
+        "categories": {
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": true
+        },
+        "solutionFile": "",
+        "image": "solutions/2021-mathcounts/2021-workout-182.jpeg"
+    },
+    {
+        "id": "Workout 183",
+        "question": "A tortoise challenged a hare to a 5-mile race.  The tortoise ran at a speed of 0.63 mi/h.  The hare ran at a speed of 36 mi/h.  The hare crossed the finish line at noon.  At what time did the tortoise cross the finish line?  Express your answer in hours and minutes to the nearest minute.",
+        "answer": "7:48",
+        "difficulty": "4",
+        "categories": {
+            "algebra": true,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Workout 187",
+        "question": "An urn contains 5 red, 6 blue, 3 white and 8 yellow tokens.  Callie selects 2 tokens, without replacement.  What is the probability she will draw 2 red tokens?  Express your answer as a common fraction.",
+        "answer": "10/231",
+        "difficulty": "4",
+        "categories": {
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": true
+        },
+        "solutionFile": ""
+    }
+]
