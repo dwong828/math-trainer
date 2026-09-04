@@ -195,5 +195,70 @@
             "probability": true
         },
         "solutionFile": ""
+    },
+    {
+        "id": "Workout 191",
+        "question": "3 people, each working at the same rate, can finish a project in 8 days.  How many days would it take 4 people working at the same rate to finish the project?",
+        "answer": "6",
+        "difficulty": "5",
+        "categories": {
+            "algebra": false,
+            "number theory": true,
+            "measurement": false,
+            "geometry": false,
+            "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-workout-191.txt"
+    },
+    {
+        "id": "Workout 192",
+        "question": "In this conversation between Anne and Diana, what is the greatest possible value of X?",
+        "answer": "14",
+        "difficulty": "4",
+        "categories": {
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": true
+        },
+        "solutionFile": "",
+        "image": "solutions/2021-mathcounts/2021-workout-192.jpeg"
+    },
+    {
+        "id": "Workout 196",
+        "question": "A rectangular prism has dimensions: x, (x+2), and 4 units.  If the volume is 80 units, what is the value of x?",
+        "answer": "B",
+        "type": "mcq",
+        "options": {
+        "A": "$1 + \\sqrt{21}$",
+        "B": "$-1 + \\sqrt{21}$",
+        "C": "$1 - \\sqrt{21}$",
+        "D": "$-1 - \\sqrt{21}$"
+        },
+        "difficulty": "4",
+        "categories": {
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": true,
+            "probability": false
+        },
+        "solutionFile": "",
+        "image": "solutions/2021-mathcounts/2021-workout-196.jpeg"
+    },
+    {
+        "id": "Workout 197",
+        "question": "In square millimeters, whatis the area of a triangle with side lengths 115mm, 9.2cm and 0.069 meters?",
+        "answer": "3174",
+        "difficulty": "4",
+        "categories": {
+            "algebra": false,
+            "number theory": false,
+            "measurement": false,
+            "geometry": false,
+            "probability": true
+        },
+        "solutionFile": ""
     }
 ]

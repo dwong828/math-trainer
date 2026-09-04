@@ -1,0 +1,3 @@
+The total work for 3 people is $3 * 8 = 24$.
+
+If 4 people work at the rate then it will take them $24 / 4 = 6$ days.
