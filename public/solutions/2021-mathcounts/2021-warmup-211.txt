@@ -1,0 +1,23 @@
+Step 1: Understand the Geometry of the Net
+Let's look at the triangle attached to the 6-unit side:
+Its base is 6.
+Its other two sides are 7.
+The slant height ($l_1$) from the midpoint of that 6-inch edge up the triangular face to the apex can be found using the Pythagorean theorem on the face itself:
+
+$l_1^2 + 3^2 = 7^2$
+$l_1^2 + 9 = 49 \implies l_1^2 = 40 \implies l_1 = \sqrt{40}$
+
+Step 2: Find the Vertical Height ($h$) of the Pyramid
+The vertical height ($h$) of the pyramid goes from the center of the base straight up to the apex. We can check consistency using the center-to-edge distances:
+$h^2 + 6^2 = l_1^2$
+$h^2 + 36 = (\sqrt{40})^2$
+$h^2 + 36 = 40 \implies h^2 = 4 \implies h = 2$
+
+Step 3: Calculate the Volume
+Now use the pyramid volume formula 
+$V = \frac{1}{3} \times B \times h$
+Area of the base (B) = $6 \times 12 = 72$
+$Height (h) = 2$
+$V = \frac{1}{3} \times 72 \times 2 = 24 \times 2 = 48$
+
+The volume of the pyramid is 48 cubic inches.

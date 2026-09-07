@@ -1,0 +1,19 @@
+Understand the Kite Geometry:
+A kite's area ($A$) is given by half the product of its diagonals:
+$A = \frac{1}{2} \times d_1 \times d_2 = \frac{1}{2} \times 25 \times 18 = 225\text{ cm}^2$
+
+The longer diagonal has a total length of $25\text{ cm}$, and it is split by the shorter diagonal into two parts. 
+We are told the shorter portion is $7\text{ cm}$, which means the longer portion is:$25 - 7 = 18\text{ cm}$
+
+Area of the bottom triangle:
+$Area = 1/2 * 18 * 18 = 162$
+
+Analyze the New Sub-Kite:
+They want to add a new strut parallel to the shorter diagonal ($18\text{ cm}$) that divides the original kite into two equal areas of 
+$\frac{225}{2} = 112.5\text{ cm}^2$.
+
+This new parallel strut creates a smaller, similar shape at the bottom of the kite. Since the shape is scaled uniformly, the ratio of the areas of the smaller top kite to the total kite is equal to the square of the scale factor ($k^2$).
+
+Set up the Area Ratio:
+$162/112.5 = (18/x)^2$
+$x = 15$

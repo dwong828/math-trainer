@@ -1,0 +1,17 @@
+Step 1: Choose the 3 balls that do not match
+If exactly 3 balls do not match their boxes, it means the remaining $30 - 3 = 27$ balls must match their correct boxes (there is only 1 way for the 27 matching balls to go into their correct boxes).
+
+First, we need to choose which 3 balls (out of 30) will be the mismatched ones. We use the combinations formula $\binom{n}{k}$:
+$\binom{30}{3} = \frac{30 \times 29 \times 28}{3 \times 2 \times 1} = 5 \times 29 \times 28 = 4,060$
+
+Step 2: Derange the remaining 3 balls
+There are 2 ways to make balls not match the box color, if there are 3 balls and boxes.
+
+To visualize this: if the 3 balls are A, B, C and the boxes are A, B, C, the only two ways to place them incorrectly are 
+[B, C, A] and [C, A, B]
+
+Step 3: Multiply the possibilities
+To find the total number of valid ways, multiply the number of ways to choose the 3 mismatched balls by the number of ways to derange them:
+$\text{Total Ways} = \binom{30}{3} \times 2 = 4,060 \times 2 = 8,120$
+
+There are 8,120 ways to place the balls.

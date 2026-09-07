@@ -1,0 +1,26 @@
+Step 1: Set up the equation
+Let $e$ represent the measure of an exterior angle.
+The complement of the exterior angle is $90^\circ - e$.
+The supplement of the exterior angle is $180^\circ - e$.
+
+According to the problem, the complement is equal to $\frac{1}{4}$ of the supplement:
+$90^\circ - e = \frac{1}{4}(180^\circ - e)$
+
+Step 2: Solve for the exterior angle ($e$)
+Multiply both sides by 4 to clear the fraction:
+$4(90^\circ - e) = 180^\circ - e$
+$360^\circ - 4e = 180^\circ - e$
+
+Rearrange the terms to solve for $e$:
+$360^\circ - 180^\circ = 4e - e$
+$180^\circ = 3e$
+$e = 60^\circ$
+
+Step 3: Find the number of sides ($n$)
+For any regular polygon, the sum of all exterior angles is always $360^\circ$, and each exterior angle is given by $\frac{360^\circ}{n}$, where $n$ is the number of sides:
+$60^\circ = \frac{360^\circ}{n}$
+
+Solving for $n$:
+$n = \frac{360}{60} = 6$
+
+The polygon has 6 sides (it is a regular hexagon)

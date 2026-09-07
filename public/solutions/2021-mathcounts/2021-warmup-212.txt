@@ -1,0 +1,22 @@
+Step 1: Let's look at the differences between consecutive terms
+$d_2 = x_2 - x_1 = 4 - 1 = 3$
+$d_3 = x_3 - x_2 = 13 - 4 = 9$
+$d_4 = x_4 - x_3 = 40 - 13 = 27$
+$d_5 = x_5 - x_4 = 121 - 40 = 81$
+
+Step 2: Identify the pattern of differences
+Each difference is 3 times the previous difference:
+$d_n = 3^{n-1}$
+
+Step 3: Calculate the 50th difference
+We need the absolute difference between the 50th and 49th numbers, which is
+$d_{50} = 3^{50-1} = 3^{49}$
+
+Step 4: Determine $p$ and $a$
+We are given that this difference can be written in the form $p^a$, where $p$ is a prime number:
+$3^{49} = p^a$
+
+$p = 3$ (which is a prime number)
+$a = 49$
+
+$p + a = 3 + 49 = 52$

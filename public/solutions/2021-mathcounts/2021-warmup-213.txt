@@ -1,0 +1,35 @@
+Step 1: Connect the center to the vertices
+Let $I$ be the center of the circle. Draw three line segments from $I$ to each of the three vertices of the triangle ($A$, $B$, and $C$).
+This splits the large triangle into three smaller triangles:
+Triangle $IAB$
+Triangle $IBC$
+Triangle $ICA$
+
+Step 2: Use the radius as the height
+Because the circle is tangent to all three sides of the triangle, the radius ($r$) drawn to each side forms a 90-degree right angle with that side.
+This means that for all three of our smaller triangles, the radius $r$ acts as the perpendicular height:
+Height of triangle $IAB = r$
+Height of triangle $IBC = r$
+Height of triangle $ICA = r$
+
+Step 3: Set up the area equation
+The total area of the large triangle is equal to the sum of the areas of these three smaller triangles:
+
+$\text{Total Area} = \text{Area}(IAB) + \text{Area}(IBC) + \text{Area}(ICA)$
+
+Using the standard triangle area formula ($\frac{1}{2} \times \text{base} \times \text{height}$):
+$\text{Total Area} = \left(\frac{1}{2} \times c \times r\right) + \left(\frac{1}{2} \times a \times r\right) + \left(\frac{1}{2} \times b \times r\right)$
+
+Step 4: Factor and solve
+Factor out the common terms ($\frac{1}{2}$ and $r$):
+$\text{Total Area} = \frac{1}{2} r (a + b + c)$
+
+The term $(a + b + c)$ is the perimeter of the triangle, which is given as 24.
+The Total Area is given as 8.
+
+Substitute these values into the equation:
+$8 = \frac{1}{2} \times r \times 24$
+$8 = 12r$
+$r = \frac{8}{12} = \frac{2}{3}$
+
+The radius of the circle is $\frac{2}{3}$.

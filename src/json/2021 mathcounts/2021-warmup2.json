@@ -1,0 +1,177 @@
+[
+    {
+        "id": "Warmup 201",
+        "question": "Callie sorted her beads into 100 piles.  The first pile had 1 bead;  the second pile had 3 beads;  the third pile had 5 beads, and so on.  Stacy sorted her beads into 100 piles, each containing an equal number of beads.  If both girls have the smame number of beads, how many beads did Stacy put in each pile?",
+        "answer": "100",
+        "difficulty": "3",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+     {
+        "id": "Warmup 203",
+        "question": "What is the value of the infinite sum $3 + 3/2 + 3/4 + 3/8 + 3/16 + ...$?",
+        "answer": "6",
+        "difficulty": "4",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+     {
+        "id": "Warmup 205",
+        "question": "For a regular polygon, the complement of an exterior angle is 1/4 of the supplement.  How many sides does the polygon have?",
+        "answer": "6",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-205.txt"
+    },
+     {
+        "id": "Warmup 206",
+        "question": "Two six-sided dice are rolled.  What is the probability that their absolute difference is odd?  Express as a common fraction.",
+        "answer": "1/2",
+        "difficulty": "3",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 207",
+        "question": "What is the greatest prime divisor of $13! - 12! + 11!$ ?",
+        "answer": "29",
+        "difficulty": "4",
+        "categories": {
+        "algebra": false,
+        "number theory": true,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 208",
+        "question": "The three-digit number ABC is 675 more than the three-digit number DEF.  If the letters A through F are distinct positive digits other than 5, 6 or 7, what is the value of ABC?",
+        "answer": "918",
+        "difficulty": "4",
+        "categories": {
+        "algebra": false,
+        "number theory": true,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": ""
+    },
+    {
+        "id": "Warmup 210",
+        "question": "A kite has diagonals of 25 and 18.  The shorter portion of the longer strut along a diagonal is 7.  They want to add a new horizontal strut that divides the kite into two equal areas.  How long will the strut be?",
+        "answer": "15",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-210.txt",
+        "image":"solutions/2021-mathcounts/2021-warmup-210.jpeg"
+    },
+    {
+        "id": "Warmup 211",
+        "question": "The net of a rectangular pyramid is shown.  Each triangle has two sides of length 7.  What is the volume of the pyramid",
+        "answer": "48",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-211.txt",
+        "image":"solutions/2021-mathcounts/2021-warmup-211.jpeg"
+    },
+    {
+        "id": "Warmup 212",
+        "question": "In this sequence of numbers: 1, 4, 13, 40, 121, ..., each number is one more than 3 times the previous number.  The absolute difference between the 49th and 50th numbers can be written as $p^a$, where p is a prime number.  What is the value of p + a?",
+        "answer": "52",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": true,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-212.txt",
+        "image":""
+    },
+    {
+        "id": "Warmup 213",
+        "question": "A circle is drawn inside a triangle ABC, so that it is tangent on all 3 sides of ABC.  ABC has a perimeter of 24 and an area of 8.  What is the radius of the circle?  Express as a common fraction.",
+        "answer": "2/3",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-213.txt",
+        "image":""
+    },
+    {
+        "id": "Warmup 219",
+        "question": "What is the sum of the values of x such that $1/x + 1/(x+1) = 1/(x+2)$?",
+        "answer": "-4",
+        "difficulty": "4",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": "",
+        "image":""
+    },
+    {
+        "id": "Warmup 220",
+        "question": "There are 30 balls, each a distinct color, and 30 boxes in the same 30 colors.  One ball is placed in each box.  How many ways can the balls be placed so that exactly 3 of the balls do not match the color of the box they are in?",
+        "answer": "8120",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-220.txt",
+        "image":""
+    }
+    
+]
