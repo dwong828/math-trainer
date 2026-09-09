@@ -1,0 +1,30 @@
+
+1. Convert the Repeating Decimal to a Fraction
+Let $x = 3,579,545.\overline{45}$. Express the repeating portion $. \overline{45}$ as a fraction:
+$0.\overline{45} = \frac{45}{99} = \frac{5}{11}$
+
+Why?
+The Algebraic Proof
+Let $x = 0.\overline{45} = 0.454545...$
+
+Multiply by $100$ (since the repeating block $45$ is 2 digits long, multiply by $10^2 = 100$ to shift one full repeating block to the left of the decimal):
+$100x = 45.454545...$
+
+Subtract the original equation ($x$) to align and cancel out the infinitely repeating decimal tail:
+$\begin{aligned}    100x &= 45.454545... \\    -\quad x &= \phantom{4}0.454545... \\    \hline    99x &= 45    \end{aligned}$
+
+Solve for $x$:
+$x = \frac{45}{99}$
+
+
+2. Now convert $x$ to an improper fraction:
+$x = 3,579,545 + \frac{5}{11} = \frac{3,579,545 \times 11 + 5}{11} = \frac{39,374,995 + 5}{11} = \frac{39,375,000}{11}$
+
+3. Form the Ratio with $5,000,000
+Divide $x$ by $5,000,000$:
+$\frac{m}{n} = \frac{\frac{39,375,000}{11}}{5,000,000} = \frac{39,375,000}{55,000,000}$
+
+Simplify the Fraction
+$\frac{m}{n} = \frac{39,375}{55,000} = \frac{63}{88}$
+
+$m + n = 63 + 88 = 151$

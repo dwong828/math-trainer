@@ -1,0 +1,16 @@
+The Pizza Slice (Central Angle)Center 
+$O$ is right in the middle of the circle.
+Draw two straight cuts from the center out to two crust points, $X$ and $Z$. This makes a slice of pizza $\triangle XOZ$.
+The two straight edges ($OX$ and $OZ$) are both radius lines. Since the diameter of the circle is $2$, each radius line is $1$ unit long.
+The crust edge connecting $X$ and $Z$ has a length of $\sqrt{2}$.
+
+If you have a triangle with sides $1$, $1$, and $\sqrt{2}$, it forms a standard $45^\circ$-$45^\circ$-$90^\circ$ right triangle.
+That means the angle right at the center ($O$) is a $90^\circ$ square corner.
+
+2. Moving to the Edge (Inscribed Angle)
+Now look at angle $\angle XYZ$. Point $Y$ sits on the edge of the circle instead of at the center.
+
+The Rule: Whenever you move the corner of an angle from the center of a circle back to the outer edge while looking at the exact same section of crust ($XZ$), the angle gets cut in half.
+
+Since the angle at the center was $90^\circ$:
+$\text{Angle at the edge } (Y) = \frac{90^\circ}{2} = 45^\circ$

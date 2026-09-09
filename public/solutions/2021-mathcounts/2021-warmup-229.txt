@@ -1,0 +1,26 @@
+Hint:  Watch the units
+
+Set Up the Equations with Unit Conversions
+Let $s$ be the side length of the cube in feet.
+Volume in $\text{ft}^3$: $V = s^3 = N$
+Side length in inches: $12s \text{ inches}$
+Surface Area in $\text{in}^2$: $A = 6(12s)^2 = 6 \times 144s^2 = 864s^2 = N$
+
+Solve for the Side Length $s$
+Equate the two expressions for $N$:
+$s^3 = 864s^2$
+$s = 864 \text{ feet}$
+
+Find the Value of $N$
+Substitute $s = 864$ into the volume equation:
+$N = s^3 = (864)^3$
+
+Determine Prime Factorization of $N$
+First, find the prime factorization of $864$:
+$864 = 2^5 \times 3^3$
+
+Now compute $N = (864)^3$:
+$N = (2^5 \times 3^3)^3 = 2^{15} \times 3^9$
+
+We get $a = 15$ and $b = 9$
+$a + b = 15 + 9 = 24$

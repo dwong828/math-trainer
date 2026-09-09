@@ -1,0 +1,23 @@
+Understand the Geometric Sequence Formula
+In a geometric sequence with first term $t_1$ and common ratio $r$, the $n^{\text{th}}$ term is given by:
+$t_n = t_1 \cdot r^{n-1}$
+
+Find the Common Ratio $r$
+The terms of the sequence are:
+$t_1 = 3$
+$t_2 = a$
+$t_3 = b$
+$t_4 = 375$
+
+Using the formula for the fourth term $t_4$:
+$375 = 3 \cdot r^3$
+
+Divide both sides by $3$:
+$r^3 = 125$
+$r = 5$
+
+Calculate $a$ and $b$
+$a = t_2 = 3 \cdot 5 = 15$
+$b = t_3 = 15 \cdot 5 = 75$
+
+$a + b = 15 + 75 = 90$

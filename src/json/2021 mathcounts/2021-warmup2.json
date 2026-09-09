@@ -172,6 +172,95 @@
         },
         "solutionFile": "solutions/2021-mathcounts/2021-warmup-220.txt",
         "image":""
+    },
+    {
+        "id": "Warmup 222",
+        "question": "9 coins are flipped.  What is the probability that the number of heads is a multiple of 3?  Express as a common fraction.",
+        "answer": "85/256",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-222.txt",
+        "image":""
+    },
+    {
+        "id": "Warmup 224",
+        "question": "A fly randomly lands on one of the squares on the board, and then randomly moves to one of the squares that is vertically or horizontally adjacent to the square it landed on.  What is the probability the fly ends up on a square marked with an X?  Express as a common fraction.",
+        "answer": "23/108",
+        "difficulty": "4",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": true
+        },
+        "solutionFile": "",
+        "image":"solutions/2021-mathcounts/2021-warmup-224.jpeg"
+    },
+    {
+        "id": "Warmup 226",
+        "question": "The ratio $3,579,545.\\overline{45} : 5,000,000$ can be expressed as a common fraction $m/n$.  What is the value of $m+n$?",
+        "answer": "151",
+        "difficulty": "5",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-226.txt",
+        "image":""
+    },
+    {
+        "id": "Warmup 228",
+        "question": "If the numbers 3, a, b and 375, in that order, form a geometric sequence, what is the value of $a+b$?",
+        "answer": "90",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": true,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-228.txt",
+        "image":""
+    },
+    {
+        "id": "Warmup 229",
+        "question": "A cube has volume $N ft^3$, and surface area $N in^2$.  If the integer N is written in the form $N = 2^a \\times 3^b$ for integers a and b, what is the value of $a+b$?",
+        "answer": "24",
+        "difficulty": "5",
+        "categories": {
+        "algebra": true,
+        "number theory": false,
+        "measurement": false,
+        "geometry": false,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-229.txt",
+        "image":""
+    },
+    {
+        "id": "Warmup 230",
+        "question": "Triangle XYZ is inscribed in circle O as shown.  If circle O has a diameter of 2 and $XZ = \\sqrt{2}$, what is the degree measure of $\\angle{XYZ}$?",
+        "answer": "45",
+        "difficulty": "5",
+        "categories": {
+        "algebra": false,
+        "number theory": false,
+        "measurement": false,
+        "geometry": true,
+        "probability": false
+        },
+        "solutionFile": "solutions/2021-mathcounts/2021-warmup-230.txt",
+        "image":"solutions/2021-mathcounts/2021-warmup-230.jpeg"
     }
-    
 ]

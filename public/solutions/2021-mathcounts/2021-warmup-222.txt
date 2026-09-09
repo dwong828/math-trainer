@@ -1,0 +1,19 @@
+HINT:  0 is a multiple of 3.
+
+Calculate the Total Outcomes
+Each of the 9 coins has 2 possible outcomes (Heads or Tails), making the total number of possible outcomes:
+$2^9 = 512$
+
+Identify the Favorable Outcomes
+The number of heads $k$ that are multiples of 3 are $k \in \{0, 3, 6, 9\}$.
+
+Use the combinations formula $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ to find the number of ways to flip exactly $k$ heads:
+0 heads: $\binom{9}{0} = 1$
+3 heads: $\binom{9}{3} = 84$
+6 heads: $\binom{9}{6} = 84$
+9 heads: $\binom{9}{9} = 1$
+
+Sum the Favorable Outcomes
+$1 + 84 + 84 + 1 = 170$
+
+$\text{Probability} = \frac{170}{512} = \frac{85}{256}$
